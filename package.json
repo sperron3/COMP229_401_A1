@@ -1,0 +1,20 @@
+{
+  "name": "express_portfolio_a1",
+  "version": "1.0.0",
+  "description": "Personal Express Portfolio Site ",
+  "main": "index.js",
+  "scripts": {
+    "start": "index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "COMP229",
+    "Assignment1",
+    "ExpressPortfolio"
+  ],
+  "author": "Shawn Perron",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
