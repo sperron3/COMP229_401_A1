@@ -1,7 +1,7 @@
 //Index Controller
 
 export function displayHomePage(req, res, next){
-    res.render('index', {title: 'Home', page: 'home'});
+    res.render('index', {title: 'Shawn Perron', page: 'home'});
 }
 
 export function displayAboutPage(req, res, next){
