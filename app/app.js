@@ -9,15 +9,33 @@ import { fileURLToPath } from 'url';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 //Configuration Module
-import { Secret } from '../config.js';
+import { Secret } from '../config/index.js';
 
 // Import Routes
-import router from '../app/routes.index.js';
+import indexRouter from '../app/routes/index.js';
 
-//Instantiate Routes
+//Instantiate the Express Application
 const app = express();
 
+//Setup Express Middleware
+
+//EJS Setup
+app.set('views', path.join(__dirname, '/views'));
+app.set('view engine', 'ejs');
+
+//General Middleware
+app.use(logger('dev'));
+app.use(express.json());
+app.use(express.urlencoded({extended: true}));
+app.use(cookieParser());
+app.use(express.static(path.join(__dirname, '../public')));
+app.use(session({
+    secret: Secret,
+    saveUninitialized: false,
+    resave: false
+}));
+
 //Use Routes
-app.use('/', router)
+app.use('/', indexRouter);
 
 export default app; 
