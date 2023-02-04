@@ -1,4 +1,35 @@
-<div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./content/contact.css">
+    <title>Document</title>
+</head>
+
+<body>
     <h1><%- title %></h1>
-    
-</div>
+        <div class="returnAddress">
+            <h3>Shawn Perron</h3>
+            <p>
+                4 Evaleigh Crt <br>
+                Whitby Ontario <br>
+                L1N8N3
+            </p>
+        <form>
+            <label for="fname">Name</label>
+            <input type="text" id="name" name="Name" placeholder="Your name...">
+            <label for="name">Email</label>
+            <input type="text" id="email" name="Email" placeholder="Your email...">
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" name="Phone" placeholder="Your phone...">
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:150px"></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>

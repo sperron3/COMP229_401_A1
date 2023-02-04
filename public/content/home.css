@@ -1,0 +1,35 @@
+body {
+    text-align: center;
+}
+
+.container {
+    width: 600px;
+    margin: 50px auto;
+    position: relative;
+}
+
+.container p {
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+    font-weight: 700;
+}
+
+.Navbuttons {
+    padding: 20px;
+}
+
+.Navbuttons button {
+    background-color: #E2DCC8;
+    padding: 10px;
+    width: 150px;
+    font-size: larger;
+    font-weight: 900;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.customLogo img {
+    height: 300px;
+    width: 400px;
+    border-radius: 20%;
+}

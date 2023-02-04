@@ -1,17 +1,18 @@
 body {
-    text-align: center;
     background-color: #DFDFDE;
 }
-.mainTxtContainer {
-    width: 400px;
-    height: 400px;
-    margin: 100px auto;
-    position: relative;
+
+body h1 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.mainTxtContainer p {
-    margin: 0;
-    padding: 0;
-    text-align: left;
-    font-family: arial;
+.panel {
+    height: 50px;
+    background-color: #0F3D3E;
+  
+  }
+.panel p {
+    color: white;
 }
+  
