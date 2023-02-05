@@ -8,28 +8,42 @@
     <link rel="stylesheet" href="./content/contact.css">
     <title>Document</title>
 </head>
-
 <body>
     <h1><%- title %></h1>
-        <div class="returnAddress">
-            <h3>Shawn Perron</h3>
-            <p>
-                4 Evaleigh Crt <br>
-                Whitby Ontario <br>
-                L1N8N3
-            </p>
-        <form>
-            <label for="fname">Name</label>
-            <input type="text" id="name" name="Name" placeholder="Your name...">
-            <label for="name">Email</label>
-            <input type="text" id="email" name="Email" placeholder="Your email...">
-            <label for="phone">Phone</label>
-            <input type="text" id="phone" name="Phone" placeholder="Your phone...">
-            <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:150px"></textarea>
-            <input type="submit" value="Submit">
-        </form>
+    <div class="container">
+        <div class="contactBox">
+            <div class="contactLeft">
+                <h3>Your Message</h3>
+                <div class="column">
+                    <div class="returnAddress">
+                        <form>
+                            <label for="fname">Name</label>
+                            <input type="text" id="name" name="Name" placeholder="Your name...">
+                            <label for="name">Email</label>
+                            <input type="text" id="email" name="Email" placeholder="Your email...">
+                            <label for="phone">Phone</label>
+                            <input type="text" id="phone" name="Phone" placeholder="Your phone...">
+                            <label for="subject">Subject</label>
+                            <textarea id="subject" name="subject" placeholder="Write something.."
+                                style="height:150px"></textarea>
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="contactRight">
+                <h3>Shawn Perron</h3>
+                <div class="contactInfo">
+                    <p>4 Evaleigh Crt<br>
+                        Whitby Ontario <br>
+                        L1N8N3 <br>
+                        pshawn22@protonmail.com
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
+
 </body>
 
 </html>

@@ -4,7 +4,6 @@ body {
 
 body h1 {
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .panel {
@@ -15,4 +14,3 @@ body h1 {
 .panel p {
     color: white;
 }
-  

@@ -34,18 +34,31 @@ input[type=text], select, textarea {
     background-color: #c9c9c8;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px;
     width: 400px;
+    padding: 20px;
   }
-  .returnAddress {
-    background-color: #0F3D3E;
+  .container{
+    width: 80%;
+    margin: 50px auto;
   }
-
-  .returnAddress > p {
+  
+  .contactBox {
+    background: #c9c9c8;
+    display: flex;
+  }
+  
+  .contactLeft {
+    flex-basis: 60%;
+    padding: 40px 60px;
+  
+  }
+  .contactRight {
+    flex-basis: 40%;
+    padding: 40px;
+    background: #0F3D3E;
     color: white;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
   }
-
-  .returnAddress > h3 {
-    color: white;
+  
+  h2 {
+    margin-bottom: 40px;
   }
