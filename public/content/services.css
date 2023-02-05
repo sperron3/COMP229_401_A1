@@ -1,3 +1,10 @@
+/* 
+* Filename: services.css
+* Author: Shawn Perron 
+* Student ID: 301 218 919
+* Date: 02/05/2023 
+*/
+
 .customLogo img {
     height: 250px;
     width: 300px;
@@ -15,4 +22,8 @@
 .services {
     text-align: center;
     margin-top: 30px;
+}
+
+.services h5 {
+    padding: 5px;
 }

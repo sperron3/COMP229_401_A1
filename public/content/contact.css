@@ -1,3 +1,10 @@
+/* 
+* Filename: contact.css
+* Author: Shawn Perron 
+* Student ID: 301 218 919
+* Date: 02/05/2023 
+*/
+
 body {
   text-align: center;
 }
@@ -13,8 +20,7 @@ input[type=text], select, textarea {
     margin-top: 6px; 
   }
   
-
-  input[type=submit] {
+    input[type=submit] {
     background-color: #0F3D3E;
     color: white;
     padding: 8px 20px;
