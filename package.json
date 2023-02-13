@@ -5,8 +5,7 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon server.js",
-    "dev": "nodemon"
+    "start": "node server.js"
   },
   "keywords": [
     "COMP229",
