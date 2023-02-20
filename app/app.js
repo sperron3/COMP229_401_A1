@@ -28,7 +28,7 @@ import { Secret, MongoURI } from '../config/index.js';
 // Import Routes
 import indexRouter from '../app/routes/index.js';
 import contactsRouter from '../app/routes/contacts.js';
-//import authRouter from '../app/routes/auth.js';
+import authRouter from '../app/routes/auth.js';
 
 //Complete DB Configuration
 mongoose.connect(MongoURI);
@@ -53,15 +53,9 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '../public')));
-app.use(session({
-    secret: Secret,
-    saveUninitialized: false,
-    resave: false
-}));
 
 //Auth Step 4: Setup Express Session
 app.use(session({
-
     secret: Secret,
     saveUninitialized: false,
     resave: false
@@ -81,10 +75,9 @@ passport.use(User.createStrategy());
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
-
 //Use Routes
 app.use('/', indexRouter);
 app.use('/', contactsRouter);
-//app.use('/', authRouter);
+app.use('/', authRouter);
 
 export default app; 

@@ -1,5 +1,7 @@
 import contactsModel from '../models/contacts.js';
 
+import { UserDisplayName } from '../utils/index.js';
+
 
 //R ead Operations
 export function DisplayContactsList(req, res, next){
@@ -8,15 +10,21 @@ export function DisplayContactsList(req, res, next){
             console.error(error);
             res.end(error);
         }
-
-        console.log(contactsCollection);
-
-        res.render('index', {title: 'Contacts List', page: 'contacts/list', contacts: contactsCollection })
-    })
+        
+        res.render('index', 
+        {title: 'Contacts List', 
+        page: 'contacts/list', 
+        contacts: contactsCollection, 
+        displayName: UserDisplayName(req)})
+    }).sort({"contactName":1}); //Sort contact List alphabetically
 }
 //C reate
 export function DisplayAddContactsPage(req, res, next){
-    res.render('index', {title: 'Add Contact', page: 'contacts/update', contact: {}})
+    res.render('index', 
+        {title: 'Add Contact', 
+        page: 'contacts/update', 
+        contact: {},
+        displayName: UserDisplayName(req)})
 }
 
 export function ProcessAddContactsPage(req, res, next){
@@ -47,11 +55,15 @@ export function DisplayUpdateContactsPage(req, res, next){
             res.end(error);
         }
 
-        res.render('index', {title: 'Update Contact', page: 'contacts/update', contact})
+        res.render('index', 
+            {title: 'Update Contact', 
+            page: 'contacts/update', 
+            contact,
+            displayName: UserDisplayName(req)})
     })    
 }
 
-export function ProcessEditContactsPage(req, res, next){
+export function ProcessUpdateContactsPage(req, res, next){
     let id = req.params.id
 
 
