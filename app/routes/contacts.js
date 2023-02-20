@@ -12,7 +12,7 @@ router.post('/contacts-add', AuthGuard, ProcessAddContactsPage);
 
 // U pdate
 router.get('/contacts-update/:id', AuthGuard, DisplayUpdateContactsPage);
-router.post('/contacts-update/:id', AuthGuard, ProcessUpdateContactsPage);
+router.post('/contacts-update/:id', AuthGuard, ProcessContactDelete);
 
 // D elete
 router.get('/contacts-delete/:id', AuthGuard, ProcessContactDelete);
