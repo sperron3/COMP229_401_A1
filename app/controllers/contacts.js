@@ -22,7 +22,7 @@ export function DisplayContactsList(req, res, next){
 export function DisplayAddContactsPage(req, res, next){
     res.render('index', 
         {title: 'Add Contact', 
-        page: 'contacts/update', 
+        page: 'contacts/add', 
         contact: {},
         displayName: UserDisplayName(req)})
 }
@@ -57,7 +57,7 @@ export function DisplayUpdateContactsPage(req, res, next){
 
         res.render('index', 
             {title: 'Update Contact', 
-            page: 'contacts/update', 
+            page: 'contacts/delete', 
             contact,
             displayName: UserDisplayName(req)})
     })    

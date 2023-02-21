@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="row">
+        <div class="offset-md-3 col-md-6">
+            <h1><%= title %></h1>
+
+            <form class="form" method="POST">
+                <input type="hidden" name="id" value="<%= contact._id %>" >
+                <div class="form-group">
+                    <label for="nameTextField">Contact Name</label>
+                    <input type="text" class="form-control"
+                    id="nameTextField"
+                    placeholder="Enter the Name"
+                    name="contactName" 
+                    value="<%= contact.contactName %>"
+                    required>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="phoneTextField">Contact Phone Number</label>
+                    <input type="text" class="form-control"
+                    id="phoneTextField"
+                    placeholder="Enter the Phone Number"
+                    name="contactNumber" 
+                    value="<%= contact.contactNumber %>"
+                    required>
+                </div>
+
+                <div class="form-group">
+                    <label for="descriptionTextArea">Contact Email</label>
+                    <input type="text" class="form-control"
+                    id="emailTextArea"
+                    placeholder="Enter Email"
+                    name="contactEmail"                     
+                    value="<%= contact.contactEmail %>"
+                    required
+                    >
+                    </input>
+                </div>
+                <button class="btn btn-primary">
+                    <i class="fas fa-edit"></i>Delete</button>
+                    <a href="/contacts-list" class="btn btn-warning"></i>Cancel</a>
+            </form>
+        </div>
+    </div>
+</div> 
