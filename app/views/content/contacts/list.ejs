@@ -1,6 +1,6 @@
 <div class="container">
     <h1><%=title %></h1>
-    <a href="/contacts-add" class="btn btn-primary" role="button">
+    <a href="/contacts-add" class="btn btn-primary" role="button" style="background-color: #0F3D3E; border-color: #0F3D3E;">
         <i class="fas fa-plus-circle"></i> Add a Contact
     </a>
     <div class="row">
@@ -24,8 +24,8 @@
                             <td><%= contacts[count].contactNumber %></td>
                             <td><%= contacts[count].contactEmail %></td>
                             <td class="text-center col-1">
-                                <a class="btn btn-primary" href="/contacts-update/<%= contacts[count].id %>">
-                                    Edit
+                                <a class="btn btn-primary" style="background-color: #0F3D3E; border-color: #0F3D3E;" href="/contacts-update/<%= contacts[count].id %>">
+                                    Update
                                 </a>
                             </td>
                             <td class="text-center col-1">
